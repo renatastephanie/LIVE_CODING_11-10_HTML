@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pesquisa de interesses</title>
+    </head>
+
+    <body>
+        <form action="http://google.com">
+            <section align="center">
+                <h1>Formulário de interesses</h1>
+                <p>Digite seu nome:
+                <input type="text" name="nome" size=40 maxlength=40 placeholder="Digite seu nome completo"></p>
+               
+                <p>Digite sua profissão:
+                <input type="text" name="profissao" size="40" maxlength="40" placeholder="Digite sua profissão"></p>
+                
+                <p>Nos conte um pouquinho sobre você:
+                <textarea name="comentario" rows="4" cols="30" placeholder="Digite aqui"></textarea></p>
+               
+                <p>Você faz exercícios regularmente?</p>
+                <input type="radio" name="exercicio" value="sim">Sim
+                <input type="radio" name="exercicio" value="nao">Não
+                
+                <p>Por onde você lê sobre seus tópicos favoritos?</p>
+                <input type="checkbox" name="livros"> Livros
+                <input type="checkbox" name="web"> Web
+                <input type="checkbox" name="sites"> Sites
+                <input type="checkbox" name="app"> App
+                <input type="checkbox" name="revistas"> Revistas
+                
+                <p>Qual gênero de filme você mais gosta?
+                <select name="filmesPreferidos">
+                    <option></option>
+                    <option value="comedia">Comédia</option>
+                    <option value="acao">Ação</option>
+                    <option value="terror">Terror</option>
+                    <option value="drama">Drama</option>
+                    <option value="suspense">Suspense</option>
+                    <option value="romance">Romance</option>
+                    <option value="ficcao">Ficção</option>
+                </select></p>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </section>
+        </form>
+    </body>
 </html>
